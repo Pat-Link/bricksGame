@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .Score {
+    color: darkslategray;
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    line-height: 20px;
+    text-align: right;
+  }
+  
+  .Score > span {
+    min-width: 200px;
+    margin-right: 100px;
+  }
+  
+  h1 {
+    display: block;
+    position: relative;
+    line-height: 0;
+    margin-top: 0;
+  }
+  .board-container {
+    padding: 20px;
+    background-color: darkslategrey;
+    height: 100%;
+  }
+  .board {
+    display: grid;
+    grid-template-rows: repeat(9, 24px);
+    background-color: black;
+    height: 100%;
+    padding: 0 3px;
+  }
+  .board .row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 4px;
+  }
+  
+  .brick {
+    width: 100%;
+    height: 20px;
+    border: 1px outset;
+    border-radius: 4px;
+  }
+  
+  .brick.red {
+    background-color: red;
+  }
+  
+  .brick.yellow {
+    background-color: yellow;
+  }
+  
+  .brick.green {
+    background-color: green;
+  }
+  
+  .brick.blue {
+    background-color: blue;
+  }
+  
+  .brick.blank {
+    border: unset;
+  }
+  #ball1{
+    height:10px;
+    width:10px;
+    background-color:white;
+    position:relative;
+}
+#ball2{
+    height:10px;
+    width:10px;
+    background-color:white;
+    position:relative;
+    left:93%
+}
+#ball3{
+    height:10px;
+    width:10px;
+    background-color:white;
+    position:relative;
+    left:93%;
+    top:100%
+}
+#paddle{
+    background-color:darkslategray;
+    left:45%;
+    bottom: 1%;
+    height: 20px;
+    width: 250px;
+    position:absolute;
+}
